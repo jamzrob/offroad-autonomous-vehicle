@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "three": "^0.113.2"
+    "three": "^0.113.2",
+    "express": "*"
   },
   "engines": {
     "node": "12.12.0"
