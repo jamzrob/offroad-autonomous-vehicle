@@ -1,6 +1,6 @@
 {
-  "name": "streetscape.gl-quick-start",
-  "description": "A template app of streetscape.gl",
+  "name": "Offroad-autonomous-navigation",
+  "description": "Offroad",
   "version": "0.1.0",
   "scripts": {
     "start-local": "webpack-dev-server --env.local --progress --hot --open",
@@ -13,6 +13,7 @@
   "dependencies": {
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
+    "react-dropzone": "^10.2.1",
     "react-router-dom": "^5.1.2",
     "streetscape.gl": "^1.0.0",
     "styled-components": "^5.0.1"

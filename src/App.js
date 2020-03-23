@@ -24,6 +24,7 @@ import React, {PureComponent} from 'react';
 import {render} from 'react-dom';
 import Map from "./streetscape";
 import Home from './home';
+import Upload from './upload';
 import {
   BrowserRouter as Router,
   Switch,
@@ -46,12 +47,18 @@ export const App = () =>{
               <li>
                 <Link to="/map">Map</Link>
               </li>
+              <li>
+                <Link to="/upload">Upload</Link>
+              </li>
             </ul>
           </nav>
 
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
+            <Route path="/upload">
+              <Upload />
+            </Route>
             <Route path="/map">
               <Map />
             </Route>
