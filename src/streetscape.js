@@ -22,7 +22,6 @@
 /* eslint-disable no-console, no-unused-vars, no-undef */
 import React, {PureComponent} from 'react';
 import {render} from 'react-dom';
-
 import {setXVIZConfig, getXVIZConfig} from '@xviz/parser';
 import {
     LogViewer,
@@ -37,6 +36,7 @@ import {
 import {Form} from '@streetscape.gl/monochrome';
 
 import {XVIZ_CONFIG, APP_SETTINGS, MAPBOX_TOKEN, MAP_STYLE, XVIZ_STYLE, CAR} from './constants';
+import styled from "styled-components";
 
 setXVIZConfig(XVIZ_CONFIG);
 
@@ -74,7 +74,7 @@ class Example extends PureComponent {
         const {log, settings} = this.state;
 
         return (
-            <div id="container">
+            <div id="container" style={{height: 800}}>
                 <div id="control-panel">
                     <XVIZPanel log={log} name="Metrics" />
                     <hr />

@@ -14,7 +14,8 @@
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-router-dom": "^5.1.2",
-    "streetscape.gl": "^1.0.0"
+    "streetscape.gl": "^1.0.0",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
