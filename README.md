@@ -20,7 +20,7 @@ git clone https://github.com/jamzrob/offroad-autonomous-vehicle.git
 2. [Download constants.js and move file into the src of OffRoad-Autonomous-Visualization application](https://drive.google.com/open?id=19TfRYo8SJsAbo8gvqnQBteg2SDsh9dvz)
 
 ```bash
-cp <constants.js> <dir>
+cp constants.js <dir>
 ```
 
 3. cd into application folder and run app
