@@ -33,4 +33,4 @@ yarn start
 
 ## Contributions and Feedback
 
-The Offroad Autonomous Vehicle front end team welcomes any contributions and feedback. Maintainers of the repository are James Raubenheimber, Alex Franzen and Asaf Roth
+The Offroad Autonomous Vehicle front end team welcomes any contributions and feedback. Maintainers of the repository are James Raubenheimer, Alex Franzen and Asaf Roth
