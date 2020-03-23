@@ -18,49 +18,14 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-/* global document, console */
-/* eslint-disable no-console, no-unused-vars, no-undef */
-import React, {PureComponent} from 'react';
-import {render} from 'react-dom';
-import Map from "./streetscape";
-import Home from './home';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {XVIZFileLoader} from 'streetscape.gl';
 
-export const App = () =>{
-  return (
-      <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/map">Map</Link>
-              </li>
-            </ul>
-          </nav>
-
-          {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-          <Switch>
-            <Route path="/map">
-              <Map />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-  );
-}
-
-
-
-render(<App />, document.getElementById('app'));
+export default new XVIZFileLoader({
+  timingsFilePath:
+    'https://raw.githubusercontent.com/uber/xviz-data/master/kitti/2011_09_26_drive_0005_sync/0-frame.json',
+  getFilePath: index =>
+    `https://raw.githubusercontent.com/uber/xviz-data/master/kitti/2011_09_26_drive_0005_sync/${index +
+      1}-frame.glb`,
+  worker: true,
+  maxConcurrency: 4
+});
